@@ -1,8 +1,6 @@
-# EPFL JupyterBook template
+# LiveComsJ JupyterBook template
 
-This is a preconfigured template to use JupyterBooks at EPFL coupled with the JupyterHub platform at `noto.epfl.ch`. 
-
-You can view a preview [here](https://epfl-data-champions.github.io/EPFL-JupyterBook/intro.html)
+This is a preconfigured template to use JupyterBooks with LiveComsJ style
 
 ## How to use
 
@@ -24,23 +22,4 @@ book title, footer etc.
 
 ```
 jb build .
-```
-
-Put on gh-pages branch
-
-```
-ghp-import -n -p -f _build/html
-```
-
-To change the footer edit the `<a>` tags in `_config.yml`. 
-
-The toc needs to be structured as in order for the styling to work correctly
-
-``` yaml
-- file: intro
-- part: Chapter Headline 
-  chapters:
-    - file: markdown
-    - file: notebooks
-
 ```
